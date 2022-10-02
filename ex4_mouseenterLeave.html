@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<style>
+		ul,li{
+		   border:solid
+		}
+		
+	</style>
+	<script>
+	     counter=0
+		 function incCounter(){
+		    counter++
+			document.getElementById('msg').innerHTML=counter
+		 }
+	</script>
+</head>
+<body>
+
+<ul onmouseenter="incCounter()">
+	<li>Apple</li>
+	<li>Banana</li>
+	<li>Orange</li>
+	<li>Mango</li>
+</ul>
+
+<p id="msg">0</p>
+
+</body>
+</html>

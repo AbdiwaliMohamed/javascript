@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+	    function main(){
+		   t=new Date()
+		   
+		   years=t.getFullYear()
+		   months=t.getMonth()+1
+		   days=t.getDate()
+
+		   hours=t.getHours()
+		   minutes=t.getMinutes()
+
+		   arr=document.getElementsByTagName('h1')
+		   arr[0].innerHTML+=years
+		   arr[1].innerHTML+=months
+		   arr[2].innerHTML+=days
+
+		   arr[3].innerHTML+=hours
+		   arr[4].innerHTML+=minutes
+
+		}
+	</script>
+</head>
+<body onload="main()">
+
+<h1>Years is: </h1>
+<h1>Month is: </h1>
+<h1>Day is: </h1>
+
+<h1>Hour is :</h1>
+<h1>Minitue is :</h1>
+
+
+</body>
+</html>

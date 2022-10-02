@@ -8,14 +8,27 @@
 			document.getElementById('msg').innerHTML=x
 			if(x==0){
 			   clearInterval(y)
-alert("end")
+                             alert("Wuu dhamaaday time kiii")
 			}
+		},1000)
+		
+		a=0;
+		b=setInterval(function (){
+		a++;
+		 document.getElementById('msg2').innerHTML=a
+		 
+		 if(a==5){
+		 clearInterval(b)
+                             alert("Wuu dhamaaday time kiii labaad")
+		 }
+		
 		},1000)
 	</script>
 </head>
 <body>
 
 <p id="msg">5</p>
+<p id="msg2">0</p>
 
 </body>
 </html>
