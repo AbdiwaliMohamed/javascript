@@ -2,6 +2,7 @@
 <head>
 	<title>JavaScript</title>
 	<script>
+	// function ka kobaad wuxuu kusoo kacayaaa 3 sec oo kaliya
 	   function showMessage(){
 	       setTimeout(function(){
 		      document.getElementById('msg').innerHTML="Hello World"
@@ -9,6 +10,13 @@
 		   
 		   console.log("hi")
 	   }
+	   // kan wuxuu kusoo kacayaa 5 sec
+	   function Itus_Fariin(){
+	    setTimeout(function (){
+	   document.getElementById('fariin').innerHTML="Kusoo dhawoow bayaan software co"
+	   },5000)
+	   }
+	   
 	
 	</script>
 </head>
@@ -16,8 +24,9 @@
 
 
 <button onclick="showMessage()">Show Message</button>
+<button onclick="Itus_Fariin()">Itus fariin</button>
 <p id="msg"></p>
-
+<p id="fariin"></p>
 
 </body>
 </html>

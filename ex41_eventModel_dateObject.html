@@ -4,13 +4,17 @@
 	<script>
 	    function main(){
 		  time_date=new Date() // waxuu kusoo akhrinayaa time ka aad xiligaa marayso
+		  document.getElementById('msg').innerHTML="Bayan software Co."
+		}
+		function main1(){
+		  time_date=new Date() // waxuu kusoo akhrinayaa time ka aad xiligaa marayso
 		  document.getElementById('msg').innerHTML=time_date
 		}
 	
 	</script>
 </head>
-<body onload="main()">
-
+<body onload="main1()">
+<button onclick="main()"> clik me</button>
 
 
 <p id="msg"></p>
