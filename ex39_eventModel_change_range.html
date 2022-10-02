@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		 function changeOpacity(x){
+		    document.getElementById('image').style.opacity=x
+		 }
+	</script>
+</head>
+<body>
+
+
+
+<img src="3.jpg" id="image" style="border:groove brown 5px;width:50%;margin:auto;display:block;border-radius:15px">
+
+
+<center style="margin-top:20px">
+	<input type="range" max="1" step="0.01" onchange="changeOpacity(this.value)"
+</center>
+
+
+</body>
+</html>

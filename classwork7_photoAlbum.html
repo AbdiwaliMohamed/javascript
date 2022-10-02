@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+x=3
+function next(){
+if(x<8)
+x++
+else
+x=3
+document.getElementById("img").src=x+".jpg"
+}
+
+</script>
+
+<img src="3.jpg" id="img" width="50%" height="50%">
+<button onclick="next()"> next</button>
+<button onclick="previous()">previous</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		function addFruit(){
+		   // getting
+		   list=document.getElementById('list')
+		   fruit=document.getElementById('fruit')
+		   
+		   // processing
+		   item="<li>"+fruit.value+"</li>"
+		   
+		   // setting
+		   list.innerHTML+=item
+		   fruit.value=""
+		}
+	</script>
+</head>
+<body>
+
+<ul id="list">
+	<li>Apple</li>
+	<li>Banana</li>
+	<li>Orange</li>
+	<li>Mango</li>
+</ul>
+
+<input type="text" placeholder="Fruit" id="fruit"><br>
+<button onclick="addFruit()">Add</button>
+
+</body>
+</html>

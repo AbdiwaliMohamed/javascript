@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+	   OverCounter=0
+	   MoveCounter=0
+
+	   function incMove(){
+	     MoveCounter++
+		 document.getElementById('move').innerHTML=MoveCounter
+	   }
+	   
+	   function incOver(){
+	     OverCounter++
+		 document.getElementById('over').innerHTML=OverCounter
+	   }
+
+	   
+	</script>
+</head>
+<body>
+
+<button onmousemove="incMove()" onmouseover="incOver()">Hover Here</button>
+
+<p id="move">0</p>
+<p id="over">0</p>
+
+</body>
+</html>

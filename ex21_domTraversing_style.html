@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		 function changeBorder(x){
+		    // getting
+			image=document.getElementById('image')
+			image.style.borderStyle=x
+		 }
+	</script>
+</head>
+<body>
+
+
+
+<img src="3.jpg" id="image" style="border:groove brown 5px;width:50%;margin:auto;display:block;border-radius:15px">
+
+
+<center style="margin-top:20px">
+	<button onclick="changeBorder('dotted')">Dotted</button>
+	<button onclick="changeBorder('dashed')">Dashed</button>
+	<button onclick="changeBorder('groove')">Groove</button>
+	<button onclick="changeBorder('double')">Double</button>
+	<button onclick="changeBorder('inset')">Inset</button>
+
+</center>
+
+
+</body>
+</html>

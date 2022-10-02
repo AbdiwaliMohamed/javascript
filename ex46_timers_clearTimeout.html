@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+	    x=5
+		y=setInterval(function(){
+		    x--
+			document.getElementById('msg').innerHTML=x
+			if(x==0){
+			   clearInterval(y)
+alert("end")
+			}
+		},1000)
+	</script>
+</head>
+<body>
+
+<p id="msg">5</p>
+
+</body>
+</html>

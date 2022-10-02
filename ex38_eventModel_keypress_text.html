@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+	    function copyText(text){
+		    document.getElementById('msg').innerHTML=text
+		}
+	</script>
+</head>
+<body>
+
+<input type="text" placeholder="Enter any thing" onchange="copyText(this.value)">
+
+<p id="msg"></p>
+
+</body>
+</html>

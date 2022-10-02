@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		function copyText(){
+		   // getting
+		   in1 = document.getElementById('x')
+		   in2 = document.getElementById('y')
+		   // processing
+		   z=in1.value
+		   // setting
+		   in2.value=z
+		   in1.value=""
+
+		}
+	</script>
+</head>
+<body>
+
+
+<input type="text" placeholder="Enter any thing" id="x"><br>
+
+<button onclick="copyText()">Copy Text</button><br>
+
+<input type="text"  id="y" readonly><br>
+
+
+
+
+
+</body>
+</html>

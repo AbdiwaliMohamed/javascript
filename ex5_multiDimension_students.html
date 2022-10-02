@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		students=[
+		   {name:"Ali",age:17,addr:"mugadisho"},
+		   {name:"Omer",age:21,addr:"bosaso"},
+		   {name:"Esraa",age:27,addr:"kismayo"}
+		]
+		
+		//path
+		
+		
+		
+		console.log(students[0].age) // reading inner
+		
+		console.log(students[1].addr)  // reading inner
+		
+		console.log(students[2]) // reading outer
+		
+		students[1].age=25 // modifying inner
+		
+		console.log(students)
+		
+		students[2]={name:"Ahmed",age:21,addr:"Bahri"} // modifying outer
+		
+		console.log(students)
+		
+		students[2].hasSiters=true // adding inner
+		
+		console.log(students)
+		
+		students[3]={name:"Osman",age:34,addr:"Salha"}
+		console.log(students)
+		
+	</script>
+</head>
+<body>
+
+
+
+</body>
+</html>

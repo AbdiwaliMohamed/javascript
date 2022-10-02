@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		function addPerson(){
+		   // getting
+		   name1=document.getElementById('name')
+		   age=document.getElementById('age')
+		   addr=document.getElementById('addr')
+		   myTable=document.getElementById('myTable')
+		   
+		   // processing
+		   row="<tr><td>"+name1.value+"</td><td>"+age.value+"</td><td>"+addr.value+"</td></tr>"
+		   
+		   // setting
+		   myTable.innerHTML+=row
+		   name1.value=""
+		   age.value=""
+		   addr.value=""
+		   
+
+		}
+	</script>
+</head>
+<body>
+<table border="1" id="myTable">
+	<tr>
+		<th>Name</th><th>Age</th><th>Address</th>
+	</tr>
+	<tr>
+		<td>Abdullah</td><td>27</td><td>Bahri</td>
+	</tr>
+	<tr>
+		<td>Esraa</td><td>25</td><td>Khartoum</td>
+	</tr>
+	<tr>
+		<td>Musa</td><td>35</td><td>Omdurman</td>
+	</tr>
+</table>
+
+<input type="text" placeholder="Name" id="name"><br>
+<input type="number" placeholder="Age" id="age"><br>
+<textarea placeholder="Address" id="addr"></textarea><br>
+
+<button onclick="addPerson()">Add</button>
+
+
+</body>
+</html>

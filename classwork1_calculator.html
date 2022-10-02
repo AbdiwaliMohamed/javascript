@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>JavaScript</title>
+	<script>
+		function calculate(){
+		   // getting
+		   n1=document.getElementById('n1')
+		   n2=document.getElementById('n2')
+		   result=document.getElementById('result')
+		   
+		   // processing
+		   z=parseFloat(n1.value)+parseFloat(n2.value) // adding
+		   
+		   // setting
+			result.value=z
+			n1.value="" // clean input 1
+			n2.value="" // clean input 2
+		}
+	</script>
+</head>
+<body>
+
+<input type="number" placeholder="First Number" id="n1"><br>
+<input type="number" placeholder="Second Number" id="n2"><br>
+
+<button onclick="calculate()">+</button><br>
+<input type="number" readonly id="result"><br>
+
+
+
+
+
+
+</body>
+</html>
